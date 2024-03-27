@@ -1,4 +1,10 @@
+const constructNote = require("./construct-note")
+
 describe("constructNote", function() {
+  it("should be a function", function () {
+    expect(typeof constructNote).toBe("function");
+  });
+
   it("should return false for empty letters string", function() {
     expect(constructNote("abcd", "")).toBe(false);
   });
